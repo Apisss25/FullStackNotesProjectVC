@@ -1,0 +1,50 @@
+# Root ignore patterns for mono-repo
+# -----------------------------------
+
+# Frontend (notesprojectvc/)
+notesprojectvc/node_modules
+notesprojectvc/.next
+notesprojectvc/out
+notesprojectvc/.env*
+notesprojectvc/.pnp
+notesprojectvc/.pnp.*
+notesprojectvc/coverage
+notesprojectvc/.DS_Store
+
+# Backend (NotesProjectBackend/)
+NotesProjectBackend/vendor
+NotesProjectBackend/.env
+NotesProjectBackend/.env.*
+NotesProjectBackend/.phpunit.result.cache
+NotesProjectBackend/auth.json
+NotesProjectBackend/Homestead.json
+NotesProjectBackend/Homestead.yaml
+NotesProjectBackend/homestead.local.yml
+NotesProjectBackend/.flake8
+NotesProjectBackend/.flight
+NotesProjectBackend/.idea
+NotesProjectBackend/.vscode
+
+# OS / IDE
+.DS_Store
+*.swp
+*.swo
+*.log
+.env.local
+
+# Monorepo root
+/.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# -----------------------------------
+# Combined ignore for both folders (literal paths)
+# -----------------------------------
+
+/notesprojectvc/.next
+/notesprojectvc/.env*
+/NotesProjectBackend/vendor
+/NotesProjectBackend/.env
+/NotesProjectBackend/storage/*.key
